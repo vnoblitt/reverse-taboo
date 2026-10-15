@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverse Taboo</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Reverse Taboo</h1>
-    <h2>How it works:</h2>
-    <p>Each day there's a secret word. You start with a single word 
-        related to the answer, and try to guess what the secret
-        word is. Each time you guess wrong anothr one is revealed, and
-        the clues get more revealing as you go. You have 5 guesses
-        in total, so the fewer clues you need, the better your score.</p>
+<body> 
+    <nav>
+        <ul>
+            <li class="title">REVERSE TABOO</li>
+            <li id="rules" class="rules">Rules</li>
+            <li id="date"></li>
+            <li id="dark-mode" class="dark-mode">Dark Mode</li>
+        </ul>
+    </nav>
+    
 
-    <span id="clues">Clues: </span>
+    <dialog id="explain">
+        <h2>How it works:</h2>
+        <p>You start with a one word clue related to the answer. 
+            Try to guess what the secret word is.</p>
+        <p>Each time you guess wrong another clue is revealed.</p>
+        <p>You have 5 guesses in total.</p>
+        <button id="close-rules">Close</button>
+    </dialog>
 
     <div id="content">
-        <input id="guess"/>
-        <button id="guess-button">Guess</button>
+        <span id="clues">Clues: </span>
+
+        <div id="guess">
+            <input id="guess-input"/>
+            <button id="guess-button">Guess</button>
+        </div>
+        
+        <span id="previous-guesses">Guessed: </span>
     </div>
-    
-    <span id="previous-guesses">Guessed: </span>
 </body>
 </html>

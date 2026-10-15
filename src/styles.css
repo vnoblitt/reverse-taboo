@@ -1,0 +1,71 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 2rem;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+    font-family: "Ultra", serif;
+    font-size: 20px;
+}
+
+li.rules,
+li.dark-mode {
+    cursor: pointer;
+}
+
+li.title {
+    margin-right: auto;
+}
+
+#explain {
+    font-size: 16px;
+    vertical-align: super;
+    width: 25%;
+}
+
+#content {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin-top: 2rem;
+}
+
+#guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#guess-input {
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 32px;
+}
+
+#guess-button {
+    height: 50px;
+}
+
+.winner {
+    white-space: pre-line;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
